@@ -40,6 +40,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -49,7 +50,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Apr 14, 2025 07:19:57 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Apr 14, 2025 10:16:17 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -65,6 +66,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -76,10 +78,32 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@PerformanceTrackers</a></li>
-					<li><a href='#'>@EmployeeTrackers</a></li>
 					<li><a href='#'>@ManageReviews</a></li>
+					<li><a href='#'>@Performance</a></li>
+					<li><a href='#'>@Admin</a></li>
+					<li><a href='#'>@TrackersNegative</a></li>
+					<li><a href='#'>@EmptyCred</a></li>
+					<li><a href='#'>@Buzz_Post</a></li>
+					<li><a href='#'>@SearchEmployee</a></li>
+					<li><a href='#'>@Trackers</a></li>
 					<li><a href='#'>@MyTrackers</a></li>
+					<li><a href='#'>@ForgotPassword</a></li>
+					<li><a href='#'>@Memberships</a></li>
+					<li><a href='#'>@AddOptionalFields</a></li>
+					<li><a href='#'>@Buzz_Post_Check</a></li>
+					<li><a href='#'>@PerformanceTrackers</a></li>
+					<li><a href='#'>@QuickLaunch_Assert</a></li>
+					<li><a href='#'>@DuplicateMemberships</a></li>
+					<li><a href='#'>@To_Punch_Out</a></li>
+					<li><a href='#'>@Terminationreason</a></li>
+					<li><a href='#'>@tag</a></li>
+					<li><a href='#'>@AddCustomfields</a></li>
+					<li><a href='#'>@AddEmployee</a></li>
+					<li><a href='#'>@EmployeeTrackers</a></li>
+					<li><a href='#'>@EmptyfieldMemberships</a></li>
+					<li><a href='#'>@AddReportingmethods</a></li>
+					<li><a href='#'>@ValidCred</a></li>
+					<li><a href='#'>@InvalidCred</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -121,12 +145,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>1</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$87%'>
+                    <span class='strong'>7</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='12%'>
+                    1</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -139,12 +163,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>4</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='76%'>
+                    <span class='strong'>23</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='23%'>
+                    7</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -159,14 +183,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>24</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='91%'>
+                    <span class='strong'>150</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='4%'>
+                    7</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='4%'>
+                    7</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -189,8 +213,169 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Accessing Manage Reviews,Trackers,Employee Trackers Fields</span>
-						<span class='test-time'>Apr 14, 2025 07:19:58 pm</span>
+						<span class='test-name'>Login</span>
+						<span class='test-time'>Apr 14, 2025 10:16:18 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+	<div class='test-desc'>  I want to login into the OrangeHRM WebPage</div>
+
+<div class='scenario node' test-id='2' status='pass'>
+
+	<span class='duration right label'>00 00 11.151</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Logging in with valid credentials</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@tag</span>
+				<span class='category label'>@ValidCred</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='4' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.LoginDefination.i_want_to_go_to_orange_hrm(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to go to OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</div>
+
+
+		</li>
+		<li test-id='5' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.LoginDefination.the_user_enters_username_and_password())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user enters username and password</div>
+
+
+		</li>
+		<li test-id='6' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.LoginDefination.clicks_on_the_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Clicks on the Login button</div>
+
+
+		</li>
+		<li test-id='7' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.LoginDefination.assert_them_for_valid_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Assert them for valid login</div>
+
+
+		</li>
+		<li test-id='8' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.LoginDefination.logout())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Logout</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='10' status='pass'>
+
+	<span class='duration right label'>00 00 09.110</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Logging in with invalid credentials</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@tag</span>
+				<span class='category label'>@InvalidCred</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='12' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.LoginDefination.i_want_to_go_to_orange_hrm(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to go to OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</div>
+
+
+		</li>
+		<li test-id='13' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.LoginDefination.the_user_enters_invalid_username_and_invalid_password())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user enters invalid username and invalid password</div>
+
+
+		</li>
+		<li test-id='14' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.LoginDefination.clicks_on_the_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Clicks on the Login button</div>
+
+
+		</li>
+		<li test-id='15' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.LoginDefination.assert_them_for_invalid_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Assert them for invalid login</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='17' status='pass'>
+
+	<span class='duration right label'>00 00 07.284</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Logging in with empty credentials</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@EmptyCred</span>
+				<span class='category label'>@tag</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='19' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.LoginDefination.i_want_to_go_to_orange_hrm(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to go to OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</div>
+
+
+		</li>
+		<li test-id='20' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.LoginDefination.the_user_enters_empty_username_and_invalid_password_as())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user enters Empty username and invalid password as</div>
+
+
+		</li>
+		<li test-id='21' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.LoginDefination.clicks_on_the_login_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Clicks on the Login button</div>
+
+
+		</li>
+		<li test-id='22' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.LoginDefination.assert_them_for_empty_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Assert them for empty login</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='24' status='pass'>
+
+	<span class='duration right label'>00 00 08.379</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Forgot Password functionality</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@ForgotPassword</span>
+				<span class='category label'>@tag</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='26' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.LoginDefination.i_want_to_go_to_orange_hrm(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to go to OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</div>
+
+
+		</li>
+		<li test-id='27' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.LoginDefination.the_user_clicks_on_the_forgot_password_link())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user clicks on the Forgot Password link</div>
+
+
+		</li>
+		<li test-id='28' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.LoginDefination.assert_the_forgot_password_page_is_displayed())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Assert the Forgot Password page is displayed</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='30'>
+					<div class='test-heading'>
+						<span class='test-name'>Adding Education Details in Admin Qualifications</span>
+						<span class='test-time'>Apr 14, 2025 10:16:54 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -201,9 +386,848 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='2' status='pass'>
+<div class='scenario node' test-id='31' status='pass'>
 
-	<span class='duration right label'>00 00 13.356</span>
+	<span class='duration right label'>00 00 18.642</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Adding Membership Details in Education field in Qualifications</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Admin</span>
+				<span class='category label'>@Memberships</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='33' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</div>
+
+
+		</li>
+		<li test-id='34' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user enters the username and password to login</div>
+
+
+		</li>
+		<li test-id='35' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.AdminDefinitions.the_user_navigates_to_the_admin_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user navigates to the Admin module</div>
+
+
+		</li>
+		<li test-id='36' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.AdminDefinitions.the_user_clicks_the_qualificatins_and_selects_memberships())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the Qualificatins and selects Memberships</div>
+
+
+		</li>
+		<li test-id='37' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.AdminDefinitions.clicks_the_add_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks the Add button</div>
+
+
+		</li>
+		<li test-id='38' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.AdminDefinitions.enters_the_following_membership_details(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And enters the following Membership Details</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>Name</td></tr><tr><td>Indian Society for Technical Education (ISTEE)</td></tr></table></div>
+		</li>
+		<li test-id='39' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.AdminDefinitions.clicks_the_save_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks the Save button</div>
+
+
+		</li>
+		<li test-id='40' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.AdminDefinitions.verify_that_the_memberships_details_are_successfully_added())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then verify that the Memberships Details are successfully added</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='42' status='pass'>
+
+	<span class='duration right label'>00 00 14.081</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Adding an already existing Memberships Detail should show an error</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@DuplicateMemberships</span>
+				<span class='category label'>@Admin</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='44' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</div>
+
+
+		</li>
+		<li test-id='45' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user enters the username and password to login</div>
+
+
+		</li>
+		<li test-id='46' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.AdminDefinitions.the_user_navigates_to_the_admin_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user navigates to the Admin module</div>
+
+
+		</li>
+		<li test-id='47' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.AdminDefinitions.the_user_clicks_the_qualificatins_and_selects_memberships())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the Qualificatins and selects Memberships</div>
+
+
+		</li>
+		<li test-id='48' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.AdminDefinitions.clicks_the_add_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks the Add button</div>
+
+
+		</li>
+		<li test-id='49' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.AdminDefinitions.enters_the_following_membership_details(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And enters the following Membership Details</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>Name</td></tr><tr><td>Indian Society for Technical Education (ISTEE)</td></tr></table></div>
+		</li>
+		<li test-id='50' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.AdminDefinitions.clicks_the_save_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks the Save button</div>
+
+
+		</li>
+		<li test-id='51' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.AdminDefinitions.verify_that_an_error_message_is_displayed(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then verify that an error message "Already exists" is displayed</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='53' status='pass'>
+
+	<span class='duration right label'>00 00 13.052</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Providing an empty value in Memberships field in Qualifications</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Admin</span>
+				<span class='category label'>@EmptyfieldMemberships</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='55' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</div>
+
+
+		</li>
+		<li test-id='56' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user enters the username and password to login</div>
+
+
+		</li>
+		<li test-id='57' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.AdminDefinitions.the_user_navigates_to_the_admin_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user navigates to the Admin module</div>
+
+
+		</li>
+		<li test-id='58' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.AdminDefinitions.the_user_clicks_the_qualificatins_and_selects_memberships())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the Qualificatins and selects Memberships</div>
+
+
+		</li>
+		<li test-id='59' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.AdminDefinitions.clicks_the_add_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks the Add button</div>
+
+
+		</li>
+		<li test-id='60' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.AdminDefinitions.enters_the_following_membership_details(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And enters the following Membership Details</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>Name</td></tr><tr><td></td></tr></table></div>
+		</li>
+		<li test-id='61' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.AdminDefinitions.clicks_the_save_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks the Save button</div>
+
+
+		</li>
+		<li test-id='62' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.AdminDefinitions.verify_the_error_message_is_displayed(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then verify the error message "Required" is displayed</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='64'>
+					<div class='test-heading'>
+						<span class='test-name'>Buzz</span>
+						<span class='test-time'>Apr 14, 2025 10:17:39 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+	<div class='test-desc'>  I want to access my Buzz and Post</div>
+
+<div class='scenario outline node' test-id='65' status='pass'>
+
+	<span class='duration right label'>00 00 11.856</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Access the Buzz and post it</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>fieldbox</td></tr><tr><td>Selenium Cucumber Java</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='66' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Access the Buzz and post it</div>
+
+				<div class='category-list'>
+						<span class='category label'>@Buzz_Post</span>
+						<span class='category label'>@tag</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='68' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</h6>
+
+				</li>
+				<li test-id='69' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user enters the username and password to login</h6>
+
+				</li>
+				<li test-id='70' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.BuzzDefinition.the_user_click_on_buzz_menu_assert_it_to_check()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user click on Buzz Menu, Assert it to check</h6>
+
+				</li>
+				<li test-id='71' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.BuzzDefinition.once_the_user_is_on_buzz_page_type_in_the_field_box_as_and_click_on_post(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Once the User is on Buzz page Type in the Field box as "Selenium Cucumber Java" and click on post</h6>
+
+				</li>
+				<li test-id='72' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.BuzzDefinition.like_the_post()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Like the Post</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='74' status='pass'>
+
+	<span class='duration right label'>00 00 11.687</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Chech the Post is displayed in the Dashboard</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Buzz_Post_Check</span>
+				<span class='category label'>@tag</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='76' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</div>
+
+
+		</li>
+		<li test-id='77' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user enters the username and password to login</div>
+
+
+		</li>
+		<li test-id='78' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.BuzzDefinition.the_user_clicks_on_dashboard_menu())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks on Dashboard menu</div>
+
+
+		</li>
+		<li test-id='79' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.BuzzDefinition.assert_the_post_to_check_its_pressence())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Assert The post to check its pressence</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='81'>
+					<div class='test-heading'>
+						<span class='test-name'>Validate OrangeHRM PIM Configuration Menu</span>
+						<span class='test-time'>Apr 14, 2025 10:18:03 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='82' status='pass'>
+
+	<span class='duration right label'>00 00 15.732</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Enable optional fields in PIM configuration</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@AddOptionalFields</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='84' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_is_on_the_dash_board_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the DashBoard page</div>
+
+
+		</li>
+		<li test-id='85' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_click_the_pim_menu())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user click the PIM menu</div>
+
+
+		</li>
+		<li test-id='86' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_user_clicks_the_configuration_menu_and_then_clicks_optional_fields())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the Configuration menu and then clicks Optional Fields</div>
+
+
+		</li>
+		<li test-id='87' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_user_enables_the_show_deprecated_fields_option())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enables the Show Deprecated Fields option</div>
+
+
+		</li>
+		<li test-id='88' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_user_clicks_the_save_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the Save button</div>
+
+
+		</li>
+		<li test-id='89' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_show_deprecated_fields_option_should_remain_enabled())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the Show Deprecated Fields option should remain enabled</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='91' status='pass'>
+
+	<span class='duration right label'>00 00 21.464</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Add Custom fields in PIM configuration</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@AddCustomfields</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='93' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_is_on_the_dash_board_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the DashBoard page</div>
+
+
+		</li>
+		<li test-id='94' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_click_the_pim_menu())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user click the PIM menu</div>
+
+
+		</li>
+		<li test-id='95' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_user_clicks_the_configuration_menu_and_then_clicks_custom_fields())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the Configuration menu and then clicks Custom Fields</div>
+
+
+		</li>
+		<li test-id='96' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_user_clicks_the_add_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the Add button</div>
+
+
+		</li>
+		<li test-id='97' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_user_fills_out_the_add_custom_field_form())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user fills out the Add Custom Field form</div>
+
+
+		</li>
+		<li test-id='98' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_user_click_the_save_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the save button</div>
+
+
+		</li>
+		<li test-id='99' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_field_should_be_added_to_the_records())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the field should be added to the records</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='101' status='pass'>
+
+	<span class='duration right label'>00 00 21.246</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Add Reporting methods in PIM configuration</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@AddReportingmethods</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='103' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_is_on_the_dash_board_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the DashBoard page</div>
+
+
+		</li>
+		<li test-id='104' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_click_the_pim_menu())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user click the PIM menu</div>
+
+
+		</li>
+		<li test-id='105' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_user_clicks_the_configuration_menu_and_then_clicks_reporting_methods())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the Configuration menu and then clicks Reporting methods</div>
+
+
+		</li>
+		<li test-id='106' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_user_clicks_the_add_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the Add button</div>
+
+
+		</li>
+		<li test-id='107' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_user_enters_the_name_of_the_reporting_method())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters the name of the reporting method</div>
+
+
+		</li>
+		<li test-id='108' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_user_click_the_save_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the save button</div>
+
+
+		</li>
+		<li test-id='109' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_reporting_method_should_be_added_to_the_list())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the reporting method should be added to the list</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='111' status='pass'>
+
+	<span class='duration right label'>00 00 22.610</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Add Termination Reson in PIM configuration</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Terminationreason</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='113' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_is_on_the_dash_board_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the DashBoard page</div>
+
+
+		</li>
+		<li test-id='114' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_click_the_pim_menu())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user click the PIM menu</div>
+
+
+		</li>
+		<li test-id='115' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_user_clicks_the_configuration_menu_and_then_clicks_termination_reasons())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the Configuration menu and then clicks Termination Reasons</div>
+
+
+		</li>
+		<li test-id='116' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_user_clicks_the_add_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user clicks the Add button</div>
+
+
+		</li>
+		<li test-id='117' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_user_enters_the_termination_reason())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user enters the Termination reason</div>
+
+
+		</li>
+		<li test-id='118' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_user_click_the_save_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the save button</div>
+
+
+		</li>
+		<li test-id='119' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.ConfigStepdefinition.the_termination_reason_should_be_added_to_the_list())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the Termination Reason should be added to the list</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='121'>
+					<div class='test-heading'>
+						<span class='test-name'>Admin Functionalities</span>
+						<span class='test-time'>Apr 14, 2025 10:19:24 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='122' status='pass'>
+
+	<span class='duration right label'>00 00 45.103</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Add two new employees and assign a supervisor</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@AddEmployee</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='124' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_is_on_the_dash_board_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the DashBoard page</div>
+
+
+		</li>
+		<li test-id='125' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_click_the_pim_menu())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user click the PIM menu</div>
+
+
+		</li>
+		<li test-id='126' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_click_the_add_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the Add Button</div>
+
+
+		</li>
+		<li test-id='127' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_fill_the_employee_form_with_details(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user fill the Employee form with details:</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>Firstname</td><td>Gayu</td></tr><tr><td>Middlename</td><td></td></tr><tr><td>Lastname</td><td>R</td></tr><tr><td>Employeeid</td><td>60</td></tr></table></div>
+		</li>
+		<li test-id='128' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_click_the_save_Button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the Save Button</div>
+
+
+		</li>
+		<li test-id='129' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_click_the_add_employee_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the Add Employee button</div>
+
+
+		</li>
+		<li test-id='130' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_fill_the_employee_form_with_details(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user fill the Employee form with details:</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>Firstname</td><td>Thoushi</td></tr><tr><td>Middlename</td><td></td></tr><tr><td>Lastname</td><td>F</td></tr><tr><td>Employeeid</td><td>61</td></tr></table></div>
+		</li>
+		<li test-id='131' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_click_the_save_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the Save button</div>
+
+
+		</li>
+		<li test-id='132' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_click_the_report_to())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the Report-to</div>
+
+
+		</li>
+		<li test-id='133' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_click_the_add_button_under_assigned_supervisors())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the Add button under Assigned Supervisors</div>
+
+
+		</li>
+		<li test-id='134' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_fill_the_supervisor_form_with(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user fill the Supervisor form with:</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>Name</td><td>Thoushi F</td></tr><tr><td>ReportingMethod</td><td>Direct</td></tr></table></div>
+		</li>
+		<li test-id='135' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_click_the_save_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the Save button</div>
+
+
+		</li>
+		<li test-id='136' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PIMStepdefinition.the_user_should_be_added_to_the_supervisor_records())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should be added to the supervisor Records</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='138' status='pass'>
+
+	<span class='duration right label'>00 00 54.013</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Search employee with valid credentials</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>Firstname</td><td>Middlename</td><td>Lastname</td><td>Employeeid</td><td>message</td></tr><tr><td></td><td></td><td>M</td><td>102</td><td>Required</td></tr><tr><td>Thoushi</td><td>Mary</td><td></td><td>10921</td><td>Required</td></tr><tr><td></td><td></td><td></td><td></td><td>Required</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='139' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Search employee with valid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@SearchEmployee</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='141' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.PIMStepdefinition.the_user_is_on_the_dash_board_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the DashBoard page</h6>
+
+				</li>
+				<li test-id='142' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.PIMStepdefinition.the_user_click_the_pim_menu()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user click the PIM menu</h6>
+
+				</li>
+				<li test-id='143' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.PIMStepdefinition.the_user_click_the_add_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the Add Button</h6>
+
+				</li>
+				<li test-id='144' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.PIMStepdefinition.the_user_fills_the_employee_form_with_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user fills the employee form with "", "", "M", and "102"</h6>
+
+				</li>
+				<li test-id='145' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.PIMStepdefinition.the_user_click_the_save_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the Save button</h6>
+
+				</li>
+				<li test-id='146' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.PIMStepdefinition.the_user_should_get_the_error_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should get the error message"Required"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='148' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Search employee with valid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@SearchEmployee</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='150' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.PIMStepdefinition.the_user_is_on_the_dash_board_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the DashBoard page</h6>
+
+				</li>
+				<li test-id='151' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.PIMStepdefinition.the_user_click_the_pim_menu()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user click the PIM menu</h6>
+
+				</li>
+				<li test-id='152' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.PIMStepdefinition.the_user_click_the_add_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the Add Button</h6>
+
+				</li>
+				<li test-id='153' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.PIMStepdefinition.the_user_fills_the_employee_form_with_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user fills the employee form with "Thoushi", "Mary", "", and "10921"</h6>
+
+				</li>
+				<li test-id='154' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.PIMStepdefinition.the_user_click_the_save_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the Save button</h6>
+
+				</li>
+				<li test-id='155' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.PIMStepdefinition.the_user_should_get_the_error_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should get the error message"Required"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='157' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Search employee with valid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@SearchEmployee</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='159' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.PIMStepdefinition.the_user_is_on_the_dash_board_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on the DashBoard page</h6>
+
+				</li>
+				<li test-id='160' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.PIMStepdefinition.the_user_click_the_pim_menu()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user click the PIM menu</h6>
+
+				</li>
+				<li test-id='161' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.PIMStepdefinition.the_user_click_the_add_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the Add Button</h6>
+
+				</li>
+				<li test-id='162' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.PIMStepdefinition.the_user_fills_the_employee_form_with_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user fills the employee form with "", "", "", and ""</h6>
+
+				</li>
+				<li test-id='163' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.PIMStepdefinition.the_user_click_the_save_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the user click the Save button</h6>
+
+				</li>
+				<li test-id='164' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.Definations.PIMStepdefinition.the_user_should_get_the_error_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should get the error message"Required"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='166'>
+					<div class='test-heading'>
+						<span class='test-name'>Adding Tracker Details in Tracker field</span>
+						<span class='test-time'>Apr 14, 2025 10:21:03 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='167' status='pass'>
+
+	<span class='duration right label'>00 00 23.349</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Add a new performance tracker with reviewers</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Trackers</span>
+				<span class='category label'>@Performance</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='169' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</div>
+
+
+		</li>
+		<li test-id='170' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user enters the username and password to login</div>
+
+
+		</li>
+		<li test-id='171' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PerformanceDefinition.navigates_to_the_performance_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And navigates to the Performance module</div>
+
+
+		</li>
+		<li test-id='172' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PerformanceDefinition.the_user_clicks_on_configure_and_selects_trackers())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The user clicks on Configure and selects Trackers</div>
+
+
+		</li>
+		<li test-id='173' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PerformanceDefinition.the_user_clicks_the_add_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The user clicks the Add button</div>
+
+
+		</li>
+		<li test-id='174' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PerformanceDefinition.the_user_enters_the_following_tracker_details(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The user enters the following tracker details</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>Tracker Name</td><td>Employee Name</td><td>Reviewers</td></tr><tr><td>Sevvel</td><td>Gayu R</td><td>Thoushi F</td></tr></table></div>
+		</li>
+		<li test-id='175' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PerformanceDefinition.the_user_clicks_the_save_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The user clicks the Save button</div>
+
+
+		</li>
+		<li test-id='176' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PerformanceDefinition.the_tracker_should_be_successfully_added(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The tracker "Sevvel" should be successfully added</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='178' status='pass'>
+
+	<span class='duration right label'>00 00 13.559</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Add a performance tracker with invalid employee details</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@TrackersNegative</span>
+				<span class='category label'>@Performance</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='180' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</div>
+
+
+		</li>
+		<li test-id='181' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user enters the username and password to login</div>
+
+
+		</li>
+		<li test-id='182' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PerformanceDefinition.navigates_to_the_performance_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And navigates to the Performance module</div>
+
+
+		</li>
+		<li test-id='183' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PerformanceDefinition.the_user_clicks_on_configure_and_selects_trackers())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The user clicks on Configure and selects Trackers</div>
+
+
+		</li>
+		<li test-id='184' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PerformanceDefinition.the_user_clicks_the_add_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The user clicks the Add button</div>
+
+
+		</li>
+		<li test-id='185' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PerformanceDefinition.the_user_enters_the_invalid_tracker_details(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The user enters the invalid tracker details</div>
+
+
+					<div class="node-step"><table class='markup-table table '><tr><td>Tracker Name</td><td>Employee Name</td><td>Reviewers</td></tr><tr><td>Sevvel</td><td></td><td>Thoushi F</td></tr></table></div>
+		</li>
+		<li test-id='186' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PerformanceDefinition.the_user_clicks_the_save_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The user clicks the Save button</div>
+
+
+		</li>
+		<li test-id='187' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.PerformanceDefinition.the_system_should_display_an_error_message_indicating_employee_name(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The system should display an error message indicating "Required"</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='189'>
+					<div class='test-heading'>
+						<span class='test-name'>Accessing Manage Reviews,Trackers,Employee Trackers Fields</span>
+						<span class='test-time'>Apr 14, 2025 10:21:40 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='190' status='pass'>
+
+	<span class='duration right label'>00 00 12.646</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verifying the Job Title and Review Status in Manage Reviews</div>
 	</div>
@@ -215,27 +1239,27 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='4' class='node given Pass' status='Pass'>
+		<li test-id='192' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</div>
 
 
 		</li>
-		<li test-id='5' class='node when Pass' status='Pass'>
+		<li test-id='193' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user enters the username and password to login</div>
 
 
 		</li>
-		<li test-id='6' class='node and Pass' status='Pass'>
+		<li test-id='194' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.PerformanceDefinition.navigates_to_the_performance_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And navigates to the Performance module</div>
 
 
 		</li>
-		<li test-id='7' class='node when Pass' status='Pass'>
+		<li test-id='195' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.PerformanceDefinitions2.the_user_clicks_manage_reviews_and_selects_my_reviews())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks Manage Reviews and selects My Reviews</div>
 
 
 		</li>
-		<li test-id='8' class='node then Pass' status='Pass'>
+		<li test-id='196' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.PerformanceDefinitions2.verify_the_following_credentials(io.cucumber.datatable.DataTable))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then verify the following credentials</div>
 
 
@@ -243,9 +1267,9 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='10' status='pass'>
+<div class='scenario node' test-id='198' status='pass'>
 
-	<span class='duration right label'>00 00 13.876</span>
+	<span class='duration right label'>00 00 12.116</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verifying the Tracker name in My Trackers</div>
 	</div>
@@ -257,36 +1281,36 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='12' class='node given Pass' status='Pass'>
+		<li test-id='200' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</div>
 
 
 		</li>
-		<li test-id='13' class='node when Pass' status='Pass'>
+		<li test-id='201' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user enters the username and password to login</div>
 
 
 		</li>
-		<li test-id='14' class='node and Pass' status='Pass'>
+		<li test-id='202' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.PerformanceDefinition.navigates_to_the_performance_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And navigates to the Performance module</div>
 
 
 		</li>
-		<li test-id='15' class='node when Pass' status='Pass'>
+		<li test-id='203' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.PerformanceDefinitions2.the_user_clicks_my_trackers())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks My Trackers</div>
 
 
 		</li>
-		<li test-id='16' class='node then Pass' status='Pass'>
+		<li test-id='204' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.PerformanceDefinitions2.verify_the_tracker_name_in_my_performance_trackers())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then verify the Tracker Name in MyPerformance Trackers</div>
 
 
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='18' status='pass'>
+<div class='scenario node' test-id='206' status='pass'>
 
-	<span class='duration right label'>00 00 12.444</span>
+	<span class='duration right label'>00 00 12.396</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Searching the Employee name in Employee Trackers</div>
 	</div>
@@ -298,46 +1322,46 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='20' class='node given Pass' status='Pass'>
+		<li test-id='208' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</div>
 
 
 		</li>
-		<li test-id='21' class='node when Pass' status='Pass'>
+		<li test-id='209' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user enters the username and password to login</div>
 
 
 		</li>
-		<li test-id='22' class='node and Pass' status='Pass'>
+		<li test-id='210' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.PerformanceDefinition.navigates_to_the_performance_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And navigates to the Performance module</div>
 
 
 		</li>
-		<li test-id='23' class='node when Pass' status='Pass'>
+		<li test-id='211' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.PerformanceDefinitions2.the_user_clicks_employee_trackers())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks Employee Trackers</div>
 
 
 		</li>
-		<li test-id='24' class='node and Pass' status='Pass'>
+		<li test-id='212' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.PerformanceDefinitions2.enter_the_employee_name_and_include())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Enter the Employee Name and Include</div>
 
 
 		</li>
-		<li test-id='25' class='node and Pass' status='Pass'>
+		<li test-id='213' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.PerformanceDefinitions2.click_search())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click Search</div>
 
 
 		</li>
-		<li test-id='26' class='node then Pass' status='Pass'>
+		<li test-id='214' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.PerformanceDefinitions2.verify_the_employee_name_is_searched_in_employee_trackers())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then verify the Employee Name is searched in Employee Trackers</div>
 
 
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='28' status='pass'>
+<div class='scenario node' test-id='216' status='pass'>
 
-	<span class='duration right label'>00 00 12.950</span>
+	<span class='duration right label'>00 00 13.008</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Searching the Employee name in Employee Trackers (Invalid)</div>
 	</div>
@@ -349,40 +1373,411 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='30' class='node given Pass' status='Pass'>
+		<li test-id='218' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</div>
 
 
 		</li>
-		<li test-id='31' class='node when Pass' status='Pass'>
+		<li test-id='219' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user enters the username and password to login</div>
 
 
 		</li>
-		<li test-id='32' class='node and Pass' status='Pass'>
+		<li test-id='220' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.PerformanceDefinition.navigates_to_the_performance_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And navigates to the Performance module</div>
 
 
 		</li>
-		<li test-id='33' class='node when Pass' status='Pass'>
+		<li test-id='221' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.PerformanceDefinitions2.the_user_clicks_employee_trackers())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user clicks Employee Trackers</div>
 
 
 		</li>
-		<li test-id='34' class='node and Pass' status='Pass'>
+		<li test-id='222' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.PerformanceDefinitions2.enter_the_invalid_employee_name_and_include())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Enter the invalid Employee Name and Include</div>
 
 
 		</li>
-		<li test-id='35' class='node and Pass' status='Pass'>
+		<li test-id='223' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.PerformanceDefinitions2.click_search())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click Search</div>
 
 
 		</li>
-		<li test-id='36' class='node then Pass' status='Pass'>
+		<li test-id='224' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.Definations.PerformanceDefinitions2.verify_the_message_is_shown_in_employee_trackers(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then verify the message "Invalid" is shown in Employee Trackers</div>
 
 
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='226'>
+					<div class='test-heading'>
+						<span class='test-name'>Dashboard</span>
+						<span class='test-time'>Apr 14, 2025 10:22:30 pm</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+	<div class='test-desc'>  I want to go to the dashboard and assert the elements</div>
+
+<div class='scenario node' test-id='227' status='fail'>
+
+	<span class='duration right label'>00 00 33.659</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Time at Work</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@To_Punch_Out</span>
+				<span class='category label'>@tag</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='229' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</div>
+
+
+		</li>
+		<li test-id='230' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user enters the username and password to login</div>
+
+
+		</li>
+		<li test-id='231' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.Definations.DashboardDefinations.the_user_is_on_the_dashboard_and_clicks_on_the_clock_icon_in_the_time_at_work_section())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user is on the dashboard and clicks on the clock icon in the Time at Work section</div>
+
+
+		</li>
+		<li test-id='232' class='node and Fail' status='Fail'>
+			<div class="step-name" title="(com.Definations.DashboardDefinations.the_user_enters_the_out_time_and_punches_out())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And The user enters the out time and punches out</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[text()=' Out ']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [779e6e55-b125-40b8-9b32-76d1d94981a0, findElement {using=xpath, value=//button[text()=' Out ']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 42100, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 779e6e55-b125-40b8-9b32-76d1d94981a0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at com.Actions.DashboardActions.out(DashboardActions.java:41)
+	at com.Definations.DashboardDefinations.the_user_enters_the_out_time_and_punches_out(DashboardDefinations.java:50)
+	at ✽.The user enters the out time and punches out(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:10)
+</textarea>
+		</li>
+		<li test-id='233' class='node then Skip' status='Skip'>
+			<div class="step-name" title="(com.Definations.DashboardDefinations.assert_that_the_user_is_on_the_dashboard_page())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Assert that the user is on the Dashboard page</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='235' status='fail'>
+
+	<span class='duration right label'>00 01 22.374</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: QuickLaunch Assert</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>Dashboard</td><td>QuickAction</td></tr><tr><td>Dashboard</td><td>Assign Leave</td></tr><tr><td>Dashboard</td><td>Leave List</td></tr><tr><td>Dashboard</td><td>Timesheets</td></tr><tr><td>Dashboard</td><td>Apply Leave</td></tr><tr><td>Dashboard</td><td>My Leave</td></tr><tr><td>Dashboard</td><td>My Timesheet</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='236' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>QuickLaunch Assert</div>
+
+				<div class='category-list'>
+						<span class='category label'>@QuickLaunch_Assert</span>
+						<span class='category label'>@tag</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='238' class='gc and Fail' status='Fail'>
+					<h6 class="step-name" title="com.Definations.DashboardDefinations.assert_the_name_dashboard(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And Assert the name Dashboard "Dashboard"</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h6[text()='Dashboard']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ba54bc8b-6ad3-4467-90f5-891c012bcff1, findElement {using=xpath, value=//h6[text()='Dashboard']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 40128, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: ba54bc8b-6ad3-4467-90f5-891c012bcff1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.Definations.DashboardDefinations.assert_the_name_dashboard(DashboardDefinations.java:67)
+	at ✽.Assert the name Dashboard "Dashboard"(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:17)
+</textarea>
+				</li>
+				<li test-id='239' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="com.Definations.DashboardDefinations.the_user_asserts_all_the_quick_action(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then the user asserts all the quick Action "Assign Leave"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+			</ul>
+		</li>
+		<li test-id='241' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>QuickLaunch Assert</div>
+
+				<div class='category-list'>
+						<span class='category label'>@QuickLaunch_Assert</span>
+						<span class='category label'>@tag</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='243' class='gc and Fail' status='Fail'>
+					<h6 class="step-name" title="com.Definations.DashboardDefinations.assert_the_name_dashboard(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And Assert the name Dashboard "Dashboard"</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h6[text()='Dashboard']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [79eec590-f74f-40c3-aeb7-71c6f3a3c95d, findElement {using=xpath, value=//h6[text()='Dashboard']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 40428, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 79eec590-f74f-40c3-aeb7-71c6f3a3c95d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.Definations.DashboardDefinations.assert_the_name_dashboard(DashboardDefinations.java:67)
+	at ✽.Assert the name Dashboard "Dashboard"(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:17)
+</textarea>
+				</li>
+				<li test-id='244' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="com.Definations.DashboardDefinations.the_user_asserts_all_the_quick_action(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then the user asserts all the quick Action "Leave List"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+			</ul>
+		</li>
+		<li test-id='246' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>QuickLaunch Assert</div>
+
+				<div class='category-list'>
+						<span class='category label'>@QuickLaunch_Assert</span>
+						<span class='category label'>@tag</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='248' class='gc and Fail' status='Fail'>
+					<h6 class="step-name" title="com.Definations.DashboardDefinations.assert_the_name_dashboard(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And Assert the name Dashboard "Dashboard"</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h6[text()='Dashboard']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d45741d0-42b9-49f1-9893-395563239c38, findElement {using=xpath, value=//h6[text()='Dashboard']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18372, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: d45741d0-42b9-49f1-9893-395563239c38
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.Definations.DashboardDefinations.assert_the_name_dashboard(DashboardDefinations.java:67)
+	at ✽.Assert the name Dashboard "Dashboard"(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:17)
+</textarea>
+				</li>
+				<li test-id='249' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="com.Definations.DashboardDefinations.the_user_asserts_all_the_quick_action(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then the user asserts all the quick Action "Timesheets"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+			</ul>
+		</li>
+		<li test-id='251' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>QuickLaunch Assert</div>
+
+				<div class='category-list'>
+						<span class='category label'>@QuickLaunch_Assert</span>
+						<span class='category label'>@tag</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='253' class='gc and Fail' status='Fail'>
+					<h6 class="step-name" title="com.Definations.DashboardDefinations.assert_the_name_dashboard(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And Assert the name Dashboard "Dashboard"</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h6[text()='Dashboard']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2cbe5758-0a23-4d33-9d24-6232baa525fc, findElement {using=xpath, value=//h6[text()='Dashboard']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 36616, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 2cbe5758-0a23-4d33-9d24-6232baa525fc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.Definations.DashboardDefinations.assert_the_name_dashboard(DashboardDefinations.java:67)
+	at ✽.Assert the name Dashboard "Dashboard"(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:17)
+</textarea>
+				</li>
+				<li test-id='254' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="com.Definations.DashboardDefinations.the_user_asserts_all_the_quick_action(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then the user asserts all the quick Action "Apply Leave"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+			</ul>
+		</li>
+		<li test-id='256' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>QuickLaunch Assert</div>
+
+				<div class='category-list'>
+						<span class='category label'>@QuickLaunch_Assert</span>
+						<span class='category label'>@tag</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='258' class='gc and Fail' status='Fail'>
+					<h6 class="step-name" title="com.Definations.DashboardDefinations.assert_the_name_dashboard(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And Assert the name Dashboard "Dashboard"</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h6[text()='Dashboard']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9dd791e9-dc45-4a92-b215-5eed02290ae4, findElement {using=xpath, value=//h6[text()='Dashboard']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21444, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9dd791e9-dc45-4a92-b215-5eed02290ae4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.Definations.DashboardDefinations.assert_the_name_dashboard(DashboardDefinations.java:67)
+	at ✽.Assert the name Dashboard "Dashboard"(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:17)
+</textarea>
+				</li>
+				<li test-id='259' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="com.Definations.DashboardDefinations.the_user_asserts_all_the_quick_action(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then the user asserts all the quick Action "My Leave"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+			</ul>
+		</li>
+		<li test-id='261' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>QuickLaunch Assert</div>
+
+				<div class='category-list'>
+						<span class='category label'>@QuickLaunch_Assert</span>
+						<span class='category label'>@tag</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='263' class='gc and Fail' status='Fail'>
+					<h6 class="step-name" title="com.Definations.DashboardDefinations.assert_the_name_dashboard(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And Assert the name Dashboard "Dashboard"</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h6[text()='Dashboard']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8f0e3823-94f3-4542-a27b-60b5d47dbbdc, findElement {using=xpath, value=//h6[text()='Dashboard']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17184, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 8f0e3823-94f3-4542-a27b-60b5d47dbbdc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.Definations.DashboardDefinations.assert_the_name_dashboard(DashboardDefinations.java:67)
+	at ✽.Assert the name Dashboard "Dashboard"(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:17)
+</textarea>
+				</li>
+				<li test-id='264' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="com.Definations.DashboardDefinations.the_user_asserts_all_the_quick_action(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then the user asserts all the quick Action "My Timesheet"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+			</ul>
 		</li>
 	</ul>
 </div>
@@ -430,92 +1825,6 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@PerformanceTrackers</span>
-						<span class='category-status right'>
-						<span class='label pass'>4</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Apr 14, 2025 07:19:58 pm</td>
-										<td class='linked' test-id='2'>Verifying the Job Title and Review Status in Manage Reviews</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Apr 14, 2025 07:20:11 pm</td>
-										<td class='linked' test-id='10'>Verifying the Tracker name in My Trackers</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Apr 14, 2025 07:20:25 pm</td>
-										<td class='linked' test-id='18'>Searching the Employee name in Employee Trackers</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Apr 14, 2025 07:20:37 pm</td>
-										<td class='linked' test-id='28'>Searching the Employee name in Employee Trackers (Invalid)</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@EmployeeTrackers</span>
-						<span class='category-status right'>
-						<span class='label pass'>2</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Apr 14, 2025 07:20:25 pm</td>
-										<td class='linked' test-id='18'>Searching the Employee name in Employee Trackers</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Apr 14, 2025 07:20:37 pm</td>
-										<td class='linked' test-id='28'>Searching the Employee name in Employee Trackers (Invalid)</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
 						<span class='category-name'>@ManageReviews</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
@@ -538,8 +1847,264 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 14, 2025 07:19:58 pm</td>
-										<td class='linked' test-id='2'>Verifying the Job Title and Review Status in Manage Reviews</td>
+										<td>Apr 14, 2025 10:21:40 pm</td>
+										<td class='linked' test-id='190'>Verifying the Job Title and Review Status in Manage Reviews</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Performance</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:21:03 pm</td>
+										<td class='linked' test-id='167'>Add a new performance tracker with reviewers</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:21:26 pm</td>
+										<td class='linked' test-id='178'>Add a performance tracker with invalid employee details</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Admin</span>
+						<span class='category-status right'>
+						<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:16:54 pm</td>
+										<td class='linked' test-id='31'>Adding Membership Details in Education field in Qualifications</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:17:12 pm</td>
+										<td class='linked' test-id='42'>Adding an already existing Memberships Detail should show an error</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:17:26 pm</td>
+										<td class='linked' test-id='53'>Providing an empty value in Memberships field in Qualifications</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@TrackersNegative</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:21:26 pm</td>
+										<td class='linked' test-id='178'>Add a performance tracker with invalid employee details</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@EmptyCred</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:16:38 pm</td>
+										<td class='linked' test-id='17'>Logging in with empty credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Buzz_Post</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:17:39 pm</td>
+										<td class='linked' test-id='66'>Access the Buzz and post it</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@SearchEmployee</span>
+						<span class='category-status right'>
+						<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:20:09 pm</td>
+										<td class='linked' test-id='139'>Search employee with valid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:20:27 pm</td>
+										<td class='linked' test-id='148'>Search employee with valid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:20:45 pm</td>
+										<td class='linked' test-id='157'>Search employee with valid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Trackers</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:21:03 pm</td>
+										<td class='linked' test-id='167'>Add a new performance tracker with reviewers</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -571,8 +2136,675 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 14, 2025 07:20:11 pm</td>
-										<td class='linked' test-id='10'>Verifying the Tracker name in My Trackers</td>
+										<td>Apr 14, 2025 10:21:53 pm</td>
+										<td class='linked' test-id='198'>Verifying the Tracker name in My Trackers</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@ForgotPassword</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:16:45 pm</td>
+										<td class='linked' test-id='24'>Forgot Password functionality</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Memberships</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:16:54 pm</td>
+										<td class='linked' test-id='31'>Adding Membership Details in Education field in Qualifications</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@AddOptionalFields</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:18:03 pm</td>
+										<td class='linked' test-id='82'>Enable optional fields in PIM configuration</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Buzz_Post_Check</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:17:51 pm</td>
+										<td class='linked' test-id='74'>Chech the Post is displayed in the Dashboard</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@PerformanceTrackers</span>
+						<span class='category-status right'>
+						<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:21:40 pm</td>
+										<td class='linked' test-id='190'>Verifying the Job Title and Review Status in Manage Reviews</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:21:53 pm</td>
+										<td class='linked' test-id='198'>Verifying the Tracker name in My Trackers</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:22:05 pm</td>
+										<td class='linked' test-id='206'>Searching the Employee name in Employee Trackers</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:22:17 pm</td>
+										<td class='linked' test-id='216'>Searching the Employee name in Employee Trackers (Invalid)</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@QuickLaunch_Assert</span>
+						<span class='category-status right'>
+						<span class='label fail'>6</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 6</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:23:04 pm</td>
+										<td class='linked' test-id='236'>QuickLaunch Assert</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:23:18 pm</td>
+										<td class='linked' test-id='241'>QuickLaunch Assert</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:23:31 pm</td>
+										<td class='linked' test-id='246'>QuickLaunch Assert</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:23:45 pm</td>
+										<td class='linked' test-id='251'>QuickLaunch Assert</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:23:59 pm</td>
+										<td class='linked' test-id='256'>QuickLaunch Assert</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:24:13 pm</td>
+										<td class='linked' test-id='261'>QuickLaunch Assert</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@DuplicateMemberships</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:17:12 pm</td>
+										<td class='linked' test-id='42'>Adding an already existing Memberships Detail should show an error</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@To_Punch_Out</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:22:30 pm</td>
+										<td class='linked' test-id='227'>Time at Work</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Terminationreason</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:19:01 pm</td>
+										<td class='linked' test-id='111'>Add Termination Reson in PIM configuration</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@tag</span>
+						<span class='category-status right'>
+						<span class='label pass'>6</span>
+						<span class='label fail'>7</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 6</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 7</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:16:18 pm</td>
+										<td class='linked' test-id='2'>Logging in with valid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:16:29 pm</td>
+										<td class='linked' test-id='10'>Logging in with invalid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:16:38 pm</td>
+										<td class='linked' test-id='17'>Logging in with empty credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:16:45 pm</td>
+										<td class='linked' test-id='24'>Forgot Password functionality</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:17:39 pm</td>
+										<td class='linked' test-id='66'>Access the Buzz and post it</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:17:51 pm</td>
+										<td class='linked' test-id='74'>Chech the Post is displayed in the Dashboard</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:22:30 pm</td>
+										<td class='linked' test-id='227'>Time at Work</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:23:04 pm</td>
+										<td class='linked' test-id='236'>QuickLaunch Assert</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:23:18 pm</td>
+										<td class='linked' test-id='241'>QuickLaunch Assert</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:23:31 pm</td>
+										<td class='linked' test-id='246'>QuickLaunch Assert</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:23:45 pm</td>
+										<td class='linked' test-id='251'>QuickLaunch Assert</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:23:59 pm</td>
+										<td class='linked' test-id='256'>QuickLaunch Assert</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:24:13 pm</td>
+										<td class='linked' test-id='261'>QuickLaunch Assert</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@AddCustomfields</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:18:19 pm</td>
+										<td class='linked' test-id='91'>Add Custom fields in PIM configuration</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@AddEmployee</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:19:24 pm</td>
+										<td class='linked' test-id='122'>Add two new employees and assign a supervisor</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@EmployeeTrackers</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:22:05 pm</td>
+										<td class='linked' test-id='206'>Searching the Employee name in Employee Trackers</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:22:17 pm</td>
+										<td class='linked' test-id='216'>Searching the Employee name in Employee Trackers (Invalid)</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@EmptyfieldMemberships</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:17:26 pm</td>
+										<td class='linked' test-id='53'>Providing an empty value in Memberships field in Qualifications</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@AddReportingmethods</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:18:40 pm</td>
+										<td class='linked' test-id='101'>Add Reporting methods in PIM configuration</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@ValidCred</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:16:18 pm</td>
+										<td class='linked' test-id='2'>Logging in with valid credentials</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@InvalidCred</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:16:29 pm</td>
+										<td class='linked' test-id='10'>Logging in with invalid credentials</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -589,7 +2821,300 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>7</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apr 14, 2025 10:22:40 pm</td>
+										<td class='linked' test-id='232'>And The user enters the out time and punches out</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[text()=' Out ']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [779e6e55-b125-40b8-9b32-76d1d94981a0, findElement {using=xpath, value=//button[text()=' Out ']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 42100, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 779e6e55-b125-40b8-9b32-76d1d94981a0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at com.Actions.DashboardActions.out(DashboardActions.java:41)
+	at com.Definations.DashboardDefinations.the_user_enters_the_out_time_and_punches_out(DashboardDefinations.java:50)
+	at ✽.The user enters the out time and punches out(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:10)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:23:07 pm</td>
+										<td class='linked' test-id='238'>And Assert the name Dashboard "Dashboard"</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[text()=' Out ']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [779e6e55-b125-40b8-9b32-76d1d94981a0, findElement {using=xpath, value=//button[text()=' Out ']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 42100, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 779e6e55-b125-40b8-9b32-76d1d94981a0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at com.Actions.DashboardActions.out(DashboardActions.java:41)
+	at com.Definations.DashboardDefinations.the_user_enters_the_out_time_and_punches_out(DashboardDefinations.java:50)
+	at ✽.The user enters the out time and punches out(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:10)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:23:21 pm</td>
+										<td class='linked' test-id='243'>And Assert the name Dashboard "Dashboard"</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[text()=' Out ']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [779e6e55-b125-40b8-9b32-76d1d94981a0, findElement {using=xpath, value=//button[text()=' Out ']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 42100, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 779e6e55-b125-40b8-9b32-76d1d94981a0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at com.Actions.DashboardActions.out(DashboardActions.java:41)
+	at com.Definations.DashboardDefinations.the_user_enters_the_out_time_and_punches_out(DashboardDefinations.java:50)
+	at ✽.The user enters the out time and punches out(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:10)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:23:34 pm</td>
+										<td class='linked' test-id='248'>And Assert the name Dashboard "Dashboard"</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[text()=' Out ']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [779e6e55-b125-40b8-9b32-76d1d94981a0, findElement {using=xpath, value=//button[text()=' Out ']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 42100, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 779e6e55-b125-40b8-9b32-76d1d94981a0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at com.Actions.DashboardActions.out(DashboardActions.java:41)
+	at com.Definations.DashboardDefinations.the_user_enters_the_out_time_and_punches_out(DashboardDefinations.java:50)
+	at ✽.The user enters the out time and punches out(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:10)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:23:48 pm</td>
+										<td class='linked' test-id='253'>And Assert the name Dashboard "Dashboard"</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[text()=' Out ']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [779e6e55-b125-40b8-9b32-76d1d94981a0, findElement {using=xpath, value=//button[text()=' Out ']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 42100, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 779e6e55-b125-40b8-9b32-76d1d94981a0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at com.Actions.DashboardActions.out(DashboardActions.java:41)
+	at com.Definations.DashboardDefinations.the_user_enters_the_out_time_and_punches_out(DashboardDefinations.java:50)
+	at ✽.The user enters the out time and punches out(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:10)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:24:02 pm</td>
+										<td class='linked' test-id='258'>And Assert the name Dashboard "Dashboard"</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[text()=' Out ']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [779e6e55-b125-40b8-9b32-76d1d94981a0, findElement {using=xpath, value=//button[text()=' Out ']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 42100, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 779e6e55-b125-40b8-9b32-76d1d94981a0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at com.Actions.DashboardActions.out(DashboardActions.java:41)
+	at com.Definations.DashboardDefinations.the_user_enters_the_out_time_and_punches_out(DashboardDefinations.java:50)
+	at ✽.The user enters the out time and punches out(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:10)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Apr 14, 2025 10:24:16 pm</td>
+										<td class='linked' test-id='263'>And Assert the name Dashboard "Dashboard"</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[text()=' Out ']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [779e6e55-b125-40b8-9b32-76d1d94981a0, findElement {using=xpath, value=//button[text()=' Out ']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 42100, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 779e6e55-b125-40b8-9b32-76d1d94981a0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at com.Actions.DashboardActions.out(DashboardActions.java:41)
+	at com.Definations.DashboardDefinations.the_user_enters_the_out_time_and_punches_out(DashboardDefinations.java:50)
+	at ✽.The user enters the out time and punches out(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:10)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -597,37 +3122,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>30</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>24</div>
+					<div class='panel-lead'>164</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 14, 2025 07:19:57 pm</div>
+					<div class='panel-lead'>Apr 14, 2025 10:16:17 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 14, 2025 07:20:50 pm</div>
+			 		<div class='panel-lead'>Apr 14, 2025 10:24:26 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 53.438</div>
+					<div class='panel-lead'>00 08 09.600</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -663,8 +3188,188 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
+							<td>@ManageReviews</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Performance</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Admin</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@TrackersNegative</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@EmptyCred</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Buzz_Post</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@SearchEmployee</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Trackers</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@MyTrackers</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@ForgotPassword</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Memberships</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@AddOptionalFields</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Buzz_Post_Check</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
 							<td>@PerformanceTrackers</td>
 							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@QuickLaunch_Assert</td>
+							<td>0</td>
+							<td>6</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@DuplicateMemberships</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@To_Punch_Out</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@Terminationreason</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@tag</td>
+							<td>6</td>
+							<td>7</td>
+							<td>0</td>
+							<td>
+									46.154%
+							</td>
+						</tr>
+						<tr>
+							<td>@AddCustomfields</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@AddEmployee</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -681,7 +3386,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@ManageReviews</td>
+							<td>@EmptyfieldMemberships</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -690,7 +3395,25 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@MyTrackers</td>
+							<td>@AddReportingmethods</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@ValidCred</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@InvalidCred</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -709,35 +3432,35 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+                parentCount: 8,
+				passParent: 7,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 4,
-				passChild: 4,
-				failChild: 0,
+				childCount: 30,
+				passChild: 23,
+				failChild: 7,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 24,
-				passGrandChild: 24,
-				failGrandChild: 0,
+				grandChildCount: 164,
+				passGrandChild: 150,
+				failGrandChild: 7,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 7,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Accessing Manage Reviews,Trackers,Employee Trackers Fields":52.643
+			        "Login":35.956,"Adding Education Details in Admin Qualifications":45.791,"Buzz":23.543,"Validate OrangeHRM PIM Configuration Menu":81.055,"Admin Functionalities":99.116,"Adding Tracker Details in Tracker field":36.916,"Accessing Manage Reviews,Trackers,Employee Trackers Fields":50.193,"Dashboard":116.038
 			};
 		</script>
 		

@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 14, 2025 07:19:57 pm</span></a>
+<a href="#"><span class="badge badge-primary">Apr 14, 2025 10:16:17 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -72,6 +77,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,7 +85,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@PerformanceTrackers</a><a class="dropdown-item" href="#">@EmployeeTrackers</a><a class="dropdown-item" href="#">@ManageReviews</a><a class="dropdown-item" href="#">@MyTrackers</a>
+<a class="dropdown-item" href="#">@ManageReviews</a><a class="dropdown-item" href="#">@Performance</a><a class="dropdown-item" href="#">@Admin</a><a class="dropdown-item" href="#">@TrackersNegative</a><a class="dropdown-item" href="#">@EmptyCred</a><a class="dropdown-item" href="#">@Buzz_Post</a><a class="dropdown-item" href="#">@SearchEmployee</a><a class="dropdown-item" href="#">@Trackers</a><a class="dropdown-item" href="#">@MyTrackers</a><a class="dropdown-item" href="#">@ForgotPassword</a><a class="dropdown-item" href="#">@Memberships</a><a class="dropdown-item" href="#">@AddOptionalFields</a><a class="dropdown-item" href="#">@Buzz_Post_Check</a><a class="dropdown-item" href="#">@PerformanceTrackers</a><a class="dropdown-item" href="#">@QuickLaunch_Assert</a><a class="dropdown-item" href="#">@DuplicateMemberships</a><a class="dropdown-item" href="#">@To_Punch_Out</a><a class="dropdown-item" href="#">@Terminationreason</a><a class="dropdown-item" href="#">@tag</a><a class="dropdown-item" href="#">@AddCustomfields</a><a class="dropdown-item" href="#">@AddEmployee</a><a class="dropdown-item" href="#">@EmployeeTrackers</a><a class="dropdown-item" href="#">@EmptyfieldMemberships</a><a class="dropdown-item" href="#">@AddReportingmethods</a><a class="dropdown-item" href="#">@ValidCred</a><a class="dropdown-item" href="#">@InvalidCred</a>
 </ul>
 </li>
 </ul>
@@ -90,9 +96,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Accessing Manage Reviews,Trackers,Employee Trackers Fields</p>
+            <p class="name">Login</p>
             <p class="text-sm">
-              <span>7:19:58 pm</span> / <span>00:00:52:643</span>
+              <span>10:16:18 pm</span> / <span>00:00:35:956</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -100,11 +106,166 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Accessing Manage Reviews,Trackers,Employee Trackers Fields</h5>
-<span class='badge badge-success'>04.14.2025 7:19:58 pm</span>
-<span class='badge badge-danger'>04.14.2025 7:20:50 pm</span>
-<span class='badge badge-default'>00:00:52:643</span>
+<h5 class="test-status text-pass">Login</h5>
+<span class='badge badge-success'>04.14.2025 10:16:18 pm</span>
+<span class='badge badge-danger'>04.14.2025 10:16:54 pm</span>
+<span class='badge badge-default'>00:00:35:956</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> I want to login into the OrangeHRM WebPage</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Logging in with valid credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Definations.LoginDefination.i_want_to_go_to_orange_hrm(java.lang.String)">
+                <span>Given I want to go to OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.LoginDefination.the_user_enters_username_and_password()">
+                <span>When The user enters username and password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.LoginDefination.clicks_on_the_login_button()">
+                <span>And Clicks on the Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.LoginDefination.assert_them_for_valid_login()">
+                <span>Then Assert them for valid login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.LoginDefination.logout()">
+                <span>And Logout</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Logging in with invalid credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Definations.LoginDefination.i_want_to_go_to_orange_hrm(java.lang.String)">
+                <span>Given I want to go to OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.LoginDefination.the_user_enters_invalid_username_and_invalid_password()">
+                <span>When The user enters invalid username and invalid password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.LoginDefination.clicks_on_the_login_button()">
+                <span>And Clicks on the Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.LoginDefination.assert_them_for_invalid_login()">
+                <span>Then Assert them for invalid login</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>Logging in with empty credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Definations.LoginDefination.i_want_to_go_to_orange_hrm(java.lang.String)">
+                <span>Given I want to go to OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.LoginDefination.the_user_enters_empty_username_and_invalid_password_as()">
+                <span>When The user enters Empty username and invalid password as</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.LoginDefination.clicks_on_the_login_button()">
+                <span>And Clicks on the Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.LoginDefination.assert_them_for_empty_login()">
+                <span>Then Assert them for empty login</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>Forgot Password functionality</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Definations.LoginDefination.i_want_to_go_to_orange_hrm(java.lang.String)">
+                <span>Given I want to go to OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.LoginDefination.the_user_clicks_on_the_forgot_password_link()">
+                <span>When The user clicks on the Forgot Password link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.LoginDefination.assert_the_forgot_password_page_is_displayed()">
+                <span>Then Assert the Forgot Password page is displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Adding Education Details in Admin Qualifications</p>
+            <p class="text-sm">
+              <span>10:16:54 pm</span> / <span>00:00:45:791</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Adding Education Details in Admin Qualifications</h5>
+<span class='badge badge-success'>04.14.2025 10:16:54 pm</span>
+<span class='badge badge-danger'>04.14.2025 10:17:39 pm</span>
+<span class='badge badge-default'>00:00:45:791</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -116,7 +277,888 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verifying the Job Title and Review Status in Manage Reviews</div>
+        <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>Adding Membership Details in Education field in Qualifications</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String)">
+                <span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login()">
+                <span>When The user enters the username and password to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.AdminDefinitions.the_user_navigates_to_the_admin_module()">
+                <span>And the user navigates to the Admin module</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.AdminDefinitions.the_user_clicks_the_qualificatins_and_selects_memberships()">
+                <span>And the user clicks the Qualificatins and selects Memberships</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.AdminDefinitions.clicks_the_add_button()">
+                <span>And clicks the Add button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.AdminDefinitions.enters_the_following_membership_details(io.cucumber.datatable.DataTable)">
+                <span>And enters the following Membership Details</span>
+      <div><table class='markup-table table '><tr><td>Name</td></tr><tr><td>Indian Society for Technical Education (ISTEE)</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.AdminDefinitions.clicks_the_save_button()">
+                <span>And clicks the Save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.AdminDefinitions.verify_that_the_memberships_details_are_successfully_added()">
+                <span>Then verify that the Memberships Details are successfully added</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="42"><span class="badge log pass-bg mr-2">Pass</span>Adding an already existing Memberships Detail should show an error</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String)">
+                <span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login()">
+                <span>When The user enters the username and password to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.AdminDefinitions.the_user_navigates_to_the_admin_module()">
+                <span>And the user navigates to the Admin module</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.AdminDefinitions.the_user_clicks_the_qualificatins_and_selects_memberships()">
+                <span>And the user clicks the Qualificatins and selects Memberships</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.AdminDefinitions.clicks_the_add_button()">
+                <span>And clicks the Add button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.AdminDefinitions.enters_the_following_membership_details(io.cucumber.datatable.DataTable)">
+                <span>And enters the following Membership Details</span>
+      <div><table class='markup-table table '><tr><td>Name</td></tr><tr><td>Indian Society for Technical Education (ISTEE)</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.AdminDefinitions.clicks_the_save_button()">
+                <span>And clicks the Save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.AdminDefinitions.verify_that_an_error_message_is_displayed(java.lang.String)">
+                <span>Then verify that an error message "Already exists" is displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="53"><span class="badge log pass-bg mr-2">Pass</span>Providing an empty value in Memberships field in Qualifications</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String)">
+                <span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login()">
+                <span>When The user enters the username and password to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.AdminDefinitions.the_user_navigates_to_the_admin_module()">
+                <span>And the user navigates to the Admin module</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.AdminDefinitions.the_user_clicks_the_qualificatins_and_selects_memberships()">
+                <span>And the user clicks the Qualificatins and selects Memberships</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.AdminDefinitions.clicks_the_add_button()">
+                <span>And clicks the Add button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.AdminDefinitions.enters_the_following_membership_details(io.cucumber.datatable.DataTable)">
+                <span>And enters the following Membership Details</span>
+      <div><table class='markup-table table '><tr><td>Name</td></tr><tr><td></td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.AdminDefinitions.clicks_the_save_button()">
+                <span>And clicks the Save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.AdminDefinitions.verify_the_error_message_is_displayed(java.lang.String)">
+                <span>Then verify the error message "Required" is displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="64"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Buzz</p>
+            <p class="text-sm">
+              <span>10:17:39 pm</span> / <span>00:00:23:543</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Buzz</h5>
+<span class='badge badge-success'>04.14.2025 10:17:39 pm</span>
+<span class='badge badge-danger'>04.14.2025 10:18:03 pm</span>
+<span class='badge badge-default'>00:00:23:543</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=64</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> I want to access my Buzz and Post</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="65"><span class="badge log pass-bg mr-2">Pass</span>Access the Buzz and post it</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="66"><span class="badge log pass-bg mr-2">Pass</span>Access the Buzz and post it</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enters the username and password to login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user click on Buzz Menu, Assert it to check</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Once the User is on Buzz page Type in the Field box as "Selenium Cucumber Java" and click on post</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Like the Post</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="74"><span class="badge log pass-bg mr-2">Pass</span>Chech the Post is displayed in the Dashboard</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String)">
+                <span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login()">
+                <span>When The user enters the username and password to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.BuzzDefinition.the_user_clicks_on_dashboard_menu()">
+                <span>When the user clicks on Dashboard menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.BuzzDefinition.assert_the_post_to_check_its_pressence()">
+                <span>And Assert The post to check its pressence</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="81"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Validate OrangeHRM PIM Configuration Menu</p>
+            <p class="text-sm">
+              <span>10:18:03 pm</span> / <span>00:01:21:055</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Validate OrangeHRM PIM Configuration Menu</h5>
+<span class='badge badge-success'>04.14.2025 10:18:03 pm</span>
+<span class='badge badge-danger'>04.14.2025 10:19:24 pm</span>
+<span class='badge badge-default'>00:01:21:055</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=81</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="82"><span class="badge log pass-bg mr-2">Pass</span>Enable optional fields in PIM configuration</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_is_on_the_dash_board_page()">
+                <span>Given the user is on the DashBoard page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_click_the_pim_menu()">
+                <span>When the user click the PIM menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_user_clicks_the_configuration_menu_and_then_clicks_optional_fields()">
+                <span>And the user clicks the Configuration menu and then clicks Optional Fields</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_user_enables_the_show_deprecated_fields_option()">
+                <span>And the user enables the Show Deprecated Fields option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_user_clicks_the_save_button()">
+                <span>And the user clicks the Save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_show_deprecated_fields_option_should_remain_enabled()">
+                <span>Then the Show Deprecated Fields option should remain enabled</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="91"><span class="badge log pass-bg mr-2">Pass</span>Add Custom fields in PIM configuration</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_is_on_the_dash_board_page()">
+                <span>Given the user is on the DashBoard page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_click_the_pim_menu()">
+                <span>When the user click the PIM menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_user_clicks_the_configuration_menu_and_then_clicks_custom_fields()">
+                <span>And the user clicks the Configuration menu and then clicks Custom Fields</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_user_clicks_the_add_button()">
+                <span>And the user clicks the Add button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_user_fills_out_the_add_custom_field_form()">
+                <span>And the user fills out the Add Custom Field form</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_user_click_the_save_button()">
+                <span>And the user click the save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_field_should_be_added_to_the_records()">
+                <span>Then the field should be added to the records</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="101"><span class="badge log pass-bg mr-2">Pass</span>Add Reporting methods in PIM configuration</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_is_on_the_dash_board_page()">
+                <span>Given the user is on the DashBoard page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_click_the_pim_menu()">
+                <span>When the user click the PIM menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_user_clicks_the_configuration_menu_and_then_clicks_reporting_methods()">
+                <span>And the user clicks the Configuration menu and then clicks Reporting methods</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_user_clicks_the_add_button()">
+                <span>And the user clicks the Add button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_user_enters_the_name_of_the_reporting_method()">
+                <span>And the user enters the name of the reporting method</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_user_click_the_save_button()">
+                <span>And the user click the save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_reporting_method_should_be_added_to_the_list()">
+                <span>Then the reporting method should be added to the list</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="111"><span class="badge log pass-bg mr-2">Pass</span>Add Termination Reson in PIM configuration</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_is_on_the_dash_board_page()">
+                <span>Given the user is on the DashBoard page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_click_the_pim_menu()">
+                <span>When the user click the PIM menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_user_clicks_the_configuration_menu_and_then_clicks_termination_reasons()">
+                <span>And the user clicks the Configuration menu and then clicks Termination Reasons</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_user_clicks_the_add_button()">
+                <span>And the user clicks the Add button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_user_enters_the_termination_reason()">
+                <span>And the user enters the Termination reason</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_user_click_the_save_button()">
+                <span>And the user click the save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.ConfigStepdefinition.the_termination_reason_should_be_added_to_the_list()">
+                <span>Then the Termination Reason should be added to the list</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="121"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Admin Functionalities</p>
+            <p class="text-sm">
+              <span>10:19:24 pm</span> / <span>00:01:39:116</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Admin Functionalities</h5>
+<span class='badge badge-success'>04.14.2025 10:19:24 pm</span>
+<span class='badge badge-danger'>04.14.2025 10:21:03 pm</span>
+<span class='badge badge-default'>00:01:39:116</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=121</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="122"><span class="badge log pass-bg mr-2">Pass</span>Add two new employees and assign a supervisor</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_is_on_the_dash_board_page()">
+                <span>Given the user is on the DashBoard page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_click_the_pim_menu()">
+                <span>When the user click the PIM menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_click_the_add_button()">
+                <span>And the user click the Add Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_fill_the_employee_form_with_details(io.cucumber.datatable.DataTable)">
+                <span>And the user fill the Employee form with details:</span>
+      <div><table class='markup-table table '><tr><td>Firstname</td><td>Gayu</td></tr><tr><td>Middlename</td><td></td></tr><tr><td>Lastname</td><td>R</td></tr><tr><td>Employeeid</td><td>60</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_click_the_save_Button()">
+                <span>And the user click the Save Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_click_the_add_employee_button()">
+                <span>And the user click the Add Employee button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_fill_the_employee_form_with_details(io.cucumber.datatable.DataTable)">
+                <span>And the user fill the Employee form with details:</span>
+      <div><table class='markup-table table '><tr><td>Firstname</td><td>Thoushi</td></tr><tr><td>Middlename</td><td></td></tr><tr><td>Lastname</td><td>F</td></tr><tr><td>Employeeid</td><td>61</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_click_the_save_button()">
+                <span>And the user click the Save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_click_the_report_to()">
+                <span>And the user click the Report-to</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_click_the_add_button_under_assigned_supervisors()">
+                <span>And the user click the Add button under Assigned Supervisors</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_fill_the_supervisor_form_with(io.cucumber.datatable.DataTable)">
+                <span>And the user fill the Supervisor form with:</span>
+      <div><table class='markup-table table '><tr><td>Name</td><td>Thoushi F</td></tr><tr><td>ReportingMethod</td><td>Direct</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_click_the_save_button()">
+                <span>And the user click the Save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PIMStepdefinition.the_user_should_be_added_to_the_supervisor_records()">
+                <span>Then the user should be added to the supervisor Records</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="138"><span class="badge log pass-bg mr-2">Pass</span>Search employee with valid credentials</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="139"><span class="badge log pass-bg mr-2">Pass</span>Search employee with valid credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the DashBoard page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user click the PIM menu</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user click the Add Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user fills the employee form with "", "", "M", and "102"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user click the Save button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should get the error message"Required"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="148"><span class="badge log pass-bg mr-2">Pass</span>Search employee with valid credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the DashBoard page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user click the PIM menu</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user click the Add Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user fills the employee form with "Thoushi", "Mary", "", and "10921"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user click the Save button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should get the error message"Required"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="157"><span class="badge log pass-bg mr-2">Pass</span>Search employee with valid credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on the DashBoard page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user click the PIM menu</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user click the Add Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user fills the employee form with "", "", "", and ""</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And the user click the Save button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should get the error message"Required"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="166"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Adding Tracker Details in Tracker field</p>
+            <p class="text-sm">
+              <span>10:21:03 pm</span> / <span>00:00:36:916</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Adding Tracker Details in Tracker field</h5>
+<span class='badge badge-success'>04.14.2025 10:21:03 pm</span>
+<span class='badge badge-danger'>04.14.2025 10:21:40 pm</span>
+<span class='badge badge-default'>00:00:36:916</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=166</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="167"><span class="badge log pass-bg mr-2">Pass</span>Add a new performance tracker with reviewers</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String)">
+                <span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login()">
+                <span>When The user enters the username and password to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PerformanceDefinition.navigates_to_the_performance_module()">
+                <span>And navigates to the Performance module</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PerformanceDefinition.the_user_clicks_on_configure_and_selects_trackers()">
+                <span>And The user clicks on Configure and selects Trackers</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PerformanceDefinition.the_user_clicks_the_add_button()">
+                <span>And The user clicks the Add button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PerformanceDefinition.the_user_enters_the_following_tracker_details(io.cucumber.datatable.DataTable)">
+                <span>And The user enters the following tracker details</span>
+      <div><table class='markup-table table '><tr><td>Tracker Name</td><td>Employee Name</td><td>Reviewers</td></tr><tr><td>Sevvel</td><td>Gayu R</td><td>Thoushi F</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PerformanceDefinition.the_user_clicks_the_save_button()">
+                <span>And The user clicks the Save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PerformanceDefinition.the_tracker_should_be_successfully_added(java.lang.String)">
+                <span>Then The tracker "Sevvel" should be successfully added</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="178"><span class="badge log pass-bg mr-2">Pass</span>Add a performance tracker with invalid employee details</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String)">
+                <span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login()">
+                <span>When The user enters the username and password to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PerformanceDefinition.navigates_to_the_performance_module()">
+                <span>And navigates to the Performance module</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PerformanceDefinition.the_user_clicks_on_configure_and_selects_trackers()">
+                <span>And The user clicks on Configure and selects Trackers</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PerformanceDefinition.the_user_clicks_the_add_button()">
+                <span>And The user clicks the Add button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PerformanceDefinition.the_user_enters_the_invalid_tracker_details(io.cucumber.datatable.DataTable)">
+                <span>And The user enters the invalid tracker details</span>
+      <div><table class='markup-table table '><tr><td>Tracker Name</td><td>Employee Name</td><td>Reviewers</td></tr><tr><td>Sevvel</td><td></td><td>Thoushi F</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PerformanceDefinition.the_user_clicks_the_save_button()">
+                <span>And The user clicks the Save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.PerformanceDefinition.the_system_should_display_an_error_message_indicating_employee_name(java.lang.String)">
+                <span>Then The system should display an error message indicating "Required"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="189"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Accessing Manage Reviews,Trackers,Employee Trackers Fields</p>
+            <p class="text-sm">
+              <span>10:21:40 pm</span> / <span>00:00:50:193</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Accessing Manage Reviews,Trackers,Employee Trackers Fields</h5>
+<span class='badge badge-success'>04.14.2025 10:21:40 pm</span>
+<span class='badge badge-danger'>04.14.2025 10:22:30 pm</span>
+<span class='badge badge-default'>00:00:50:193</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=189</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="190"><span class="badge log pass-bg mr-2">Pass</span>Verifying the Job Title and Review Status in Manage Reviews</div>
       </div>
     </div>
         <div class="collapse">
@@ -154,7 +1196,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Verifying the Tracker name in My Trackers</div>
+        <div class="node" id="198"><span class="badge log pass-bg mr-2">Pass</span>Verifying the Tracker name in My Trackers</div>
       </div>
     </div>
         <div class="collapse">
@@ -190,7 +1232,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>Searching the Employee name in Employee Trackers</div>
+        <div class="node" id="206"><span class="badge log pass-bg mr-2">Pass</span>Searching the Employee name in Employee Trackers</div>
       </div>
     </div>
         <div class="collapse">
@@ -236,7 +1278,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="28"><span class="badge log pass-bg mr-2">Pass</span>Searching the Employee name in Employee Trackers (Invalid)</div>
+        <div class="node" id="216"><span class="badge log pass-bg mr-2">Pass</span>Searching the Employee name in Employee Trackers (Invalid)</div>
       </div>
     </div>
         <div class="collapse">
@@ -282,6 +1324,382 @@
 </div>
           </div>
         </li>
+        <li class="test-item"  status="fail" test-id="226"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Dashboard</p>
+            <p class="text-sm">
+              <span>10:22:30 pm</span> / <span>00:01:56:038</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Dashboard</h5>
+<span class='badge badge-success'>04.14.2025 10:22:30 pm</span>
+<span class='badge badge-danger'>04.14.2025 10:24:26 pm</span>
+<span class='badge badge-default'>00:01:56:038</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=226</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> I want to go to the dashboard and assert the elements</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="227"><span class="badge log fail-bg mr-2">Fail</span>Time at Work</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.Definations.DashboardDefinations.i_want_to_go_into_orange_hrm(java.lang.String)">
+                <span>Given I want to go into OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.DashboardDefinations.the_user_enters_the_username_and_password_to_login()">
+                <span>When The user enters the username and password to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.Definations.DashboardDefinations.the_user_is_on_the_dashboard_and_clicks_on_the_clock_icon_in_the_time_at_work_section()">
+                <span>When The user is on the dashboard and clicks on the clock icon in the Time at Work section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.Definations.DashboardDefinations.the_user_enters_the_out_time_and_punches_out()">
+                <span>And The user enters the out time and punches out</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[text()=' Out ']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [779e6e55-b125-40b8-9b32-76d1d94981a0, findElement {using=xpath, value=//button[text()=' Out ']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 42100, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 779e6e55-b125-40b8-9b32-76d1d94981a0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at com.Actions.DashboardActions.out(DashboardActions.java:41)
+	at com.Definations.DashboardDefinations.the_user_enters_the_out_time_and_punches_out(DashboardDefinations.java:50)
+	at ✽.The user enters the out time and punches out(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:10)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.Definations.DashboardDefinations.assert_that_the_user_is_on_the_dashboard_page()">
+                <span>Then Assert that the user is on the Dashboard page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="235"><span class="badge log fail-bg mr-2">Fail</span>QuickLaunch Assert</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="236"><span class="badge log fail-bg mr-2">Fail</span>QuickLaunch Assert</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>And Assert the name Dashboard "Dashboard"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h6[text()='Dashboard']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ba54bc8b-6ad3-4467-90f5-891c012bcff1, findElement {using=xpath, value=//h6[text()='Dashboard']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 40128, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: ba54bc8b-6ad3-4467-90f5-891c012bcff1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.Definations.DashboardDefinations.assert_the_name_dashboard(DashboardDefinations.java:67)
+	at ✽.Assert the name Dashboard "Dashboard"(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:17)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then the user asserts all the quick Action "Assign Leave"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="241"><span class="badge log fail-bg mr-2">Fail</span>QuickLaunch Assert</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>And Assert the name Dashboard "Dashboard"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h6[text()='Dashboard']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [79eec590-f74f-40c3-aeb7-71c6f3a3c95d, findElement {using=xpath, value=//h6[text()='Dashboard']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 40428, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 79eec590-f74f-40c3-aeb7-71c6f3a3c95d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.Definations.DashboardDefinations.assert_the_name_dashboard(DashboardDefinations.java:67)
+	at ✽.Assert the name Dashboard "Dashboard"(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:17)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then the user asserts all the quick Action "Leave List"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="246"><span class="badge log fail-bg mr-2">Fail</span>QuickLaunch Assert</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>And Assert the name Dashboard "Dashboard"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h6[text()='Dashboard']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d45741d0-42b9-49f1-9893-395563239c38, findElement {using=xpath, value=//h6[text()='Dashboard']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18372, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: d45741d0-42b9-49f1-9893-395563239c38
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.Definations.DashboardDefinations.assert_the_name_dashboard(DashboardDefinations.java:67)
+	at ✽.Assert the name Dashboard "Dashboard"(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:17)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then the user asserts all the quick Action "Timesheets"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="251"><span class="badge log fail-bg mr-2">Fail</span>QuickLaunch Assert</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>And Assert the name Dashboard "Dashboard"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h6[text()='Dashboard']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2cbe5758-0a23-4d33-9d24-6232baa525fc, findElement {using=xpath, value=//h6[text()='Dashboard']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 36616, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 2cbe5758-0a23-4d33-9d24-6232baa525fc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.Definations.DashboardDefinations.assert_the_name_dashboard(DashboardDefinations.java:67)
+	at ✽.Assert the name Dashboard "Dashboard"(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:17)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then the user asserts all the quick Action "Apply Leave"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="256"><span class="badge log fail-bg mr-2">Fail</span>QuickLaunch Assert</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>And Assert the name Dashboard "Dashboard"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h6[text()='Dashboard']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9dd791e9-dc45-4a92-b215-5eed02290ae4, findElement {using=xpath, value=//h6[text()='Dashboard']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21444, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9dd791e9-dc45-4a92-b215-5eed02290ae4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.Definations.DashboardDefinations.assert_the_name_dashboard(DashboardDefinations.java:67)
+	at ✽.Assert the name Dashboard "Dashboard"(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:17)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then the user asserts all the quick Action "My Leave"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="261"><span class="badge log fail-bg mr-2">Fail</span>QuickLaunch Assert</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>And Assert the name Dashboard "Dashboard"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //h6[text()='Dashboard']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8f0e3823-94f3-4542-a27b-60b5d47dbbdc, findElement {using=xpath, value=//h6[text()='Dashboard']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17184, moz:profile: C:\Users\thous\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 8f0e3823-94f3-4542-a27b-60b5d47dbbdc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.Definations.DashboardDefinations.assert_the_name_dashboard(DashboardDefinations.java:67)
+	at ✽.Assert the name Dashboard "Dashboard"(file:///C:/Users/thous/git/OrangeHRM_CucumberProject/Cucumber_!/src/test/resources/com/features/TimePunchoutDashboard.feature:17)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then the user asserts all the quick Action "My Timesheet"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -291,26 +1709,26 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-danger'>7</span>
 </span>
-<p class="name">@PerformanceTrackers</p>
-<p class="duration text-sm">4 tests</p>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">7 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@PerformanceTrackers</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -321,89 +1739,73 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:19:58 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:22:40 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Verifying the Job Title and Review Status in Manage Reviews</a>
+<a href="#" class="linked" test-id='226' id='232'>And The user enters the out time and punches out</a>
 <div class="">
-<span class="badge badge-default">Accessing Manage Reviews,Trackers,Employee Trackers Fields.Verifying the Job Title and Review Status in Manage Reviews</span>
+<span class="badge badge-default">Dashboard.Time at Work.And The user enters the out time and punches out</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:20:11 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:23:07 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='10'>Verifying the Tracker name in My Trackers</a>
+<a href="#" class="linked" test-id='226' id='238'>And Assert the name Dashboard "Dashboard"</a>
 <div class="">
-<span class="badge badge-default">Accessing Manage Reviews,Trackers,Employee Trackers Fields.Verifying the Tracker name in My Trackers</span>
+<span class="badge badge-default">Dashboard.QuickLaunch Assert.And Assert the name Dashboard "Dashboard"</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:20:25 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:23:21 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='18'>Searching the Employee name in Employee Trackers</a>
+<a href="#" class="linked" test-id='226' id='243'>And Assert the name Dashboard "Dashboard"</a>
 <div class="">
-<span class="badge badge-default">Accessing Manage Reviews,Trackers,Employee Trackers Fields.Searching the Employee name in Employee Trackers</span>
+<span class="badge badge-default">Dashboard.QuickLaunch Assert.And Assert the name Dashboard "Dashboard"</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:20:37 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:23:34 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='28'>Searching the Employee name in Employee Trackers (Invalid)</a>
+<a href="#" class="linked" test-id='226' id='248'>And Assert the name Dashboard "Dashboard"</a>
 <div class="">
-<span class="badge badge-default">Accessing Manage Reviews,Trackers,Employee Trackers Fields.Searching the Employee name in Employee Trackers (Invalid)</span>
+<span class="badge badge-default">Dashboard.QuickLaunch Assert.And Assert the name Dashboard "Dashboard"</span>
 </div>
 </td>
 </tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@EmployeeTrackers</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@EmployeeTrackers</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:20:25 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:23:48 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='18'>Searching the Employee name in Employee Trackers</a>
+<a href="#" class="linked" test-id='226' id='253'>And Assert the name Dashboard "Dashboard"</a>
 <div class="">
-<span class="badge badge-default">Accessing Manage Reviews,Trackers,Employee Trackers Fields.Searching the Employee name in Employee Trackers</span>
+<span class="badge badge-default">Dashboard.QuickLaunch Assert.And Assert the name Dashboard "Dashboard"</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:20:37 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:24:02 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='28'>Searching the Employee name in Employee Trackers (Invalid)</a>
+<a href="#" class="linked" test-id='226' id='258'>And Assert the name Dashboard "Dashboard"</a>
 <div class="">
-<span class="badge badge-default">Accessing Manage Reviews,Trackers,Employee Trackers Fields.Searching the Employee name in Employee Trackers (Invalid)</span>
+<span class="badge badge-default">Dashboard.QuickLaunch Assert.And Assert the name Dashboard "Dashboard"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:24:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='226' id='263'>And Assert the name Dashboard "Dashboard"</a>
+<div class="">
+<span class="badge badge-default">Dashboard.QuickLaunch Assert.And Assert the name Dashboard "Dashboard"</span>
 </div>
 </td>
 </tr>
@@ -411,6 +1813,22 @@
 </table>
 </div>
 </li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">26</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -435,11 +1853,313 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>19:19:58 pm</td>
+<td>22:21:40 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Verifying the Job Title and Review Status in Manage Reviews</a>
+<a href="#" class="linked" test-id='189' id='190'>Verifying the Job Title and Review Status in Manage Reviews</a>
 <div class="">
 <span class="badge badge-default">Accessing Manage Reviews,Trackers,Employee Trackers Fields.Verifying the Job Title and Review Status in Manage Reviews</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@Performance</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Performance</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:21:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='166' id='167'>Add a new performance tracker with reviewers</a>
+<div class="">
+<span class="badge badge-default">Adding Tracker Details in Tracker field.Add a new performance tracker with reviewers</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:21:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='166' id='178'>Add a performance tracker with invalid employee details</a>
+<div class="">
+<span class="badge badge-default">Adding Tracker Details in Tracker field.Add a performance tracker with invalid employee details</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@Admin</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Admin</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:16:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='30' id='31'>Adding Membership Details in Education field in Qualifications</a>
+<div class="">
+<span class="badge badge-default">Adding Education Details in Admin Qualifications.Adding Membership Details in Education field in Qualifications</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:17:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='30' id='42'>Adding an already existing Memberships Detail should show an error</a>
+<div class="">
+<span class="badge badge-default">Adding Education Details in Admin Qualifications.Adding an already existing Memberships Detail should show an error</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:17:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='30' id='53'>Providing an empty value in Memberships field in Qualifications</a>
+<div class="">
+<span class="badge badge-default">Adding Education Details in Admin Qualifications.Providing an empty value in Memberships field in Qualifications</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TrackersNegative</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TrackersNegative</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:21:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='166' id='178'>Add a performance tracker with invalid employee details</a>
+<div class="">
+<span class="badge badge-default">Adding Tracker Details in Tracker field.Add a performance tracker with invalid employee details</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@EmptyCred</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@EmptyCred</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:16:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Logging in with empty credentials</a>
+<div class="">
+<span class="badge badge-default">Login.Logging in with empty credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Buzz_Post</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Buzz_Post</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:17:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='64' id='66'>Access the Buzz and post it</a>
+<div class="">
+<span class="badge badge-default">Buzz.Access the Buzz and post it</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@SearchEmployee</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@SearchEmployee</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:20:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='121' id='139'>Search employee with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Admin Functionalities.Search employee with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:20:27 pm</td>
+<td>
+<a href="#" class="linked" test-id='121' id='148'>Search employee with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Admin Functionalities.Search employee with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:20:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='121' id='157'>Search employee with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Admin Functionalities.Search employee with valid credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Trackers</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Trackers</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:21:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='166' id='167'>Add a new performance tracker with reviewers</a>
+<div class="">
+<span class="badge badge-default">Adding Tracker Details in Tracker field.Add a new performance tracker with reviewers</span>
 </div>
 </td>
 </tr>
@@ -471,11 +2191,835 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>19:20:11 pm</td>
+<td>22:21:53 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='10'>Verifying the Tracker name in My Trackers</a>
+<a href="#" class="linked" test-id='189' id='198'>Verifying the Tracker name in My Trackers</a>
 <div class="">
 <span class="badge badge-default">Accessing Manage Reviews,Trackers,Employee Trackers Fields.Verifying the Tracker name in My Trackers</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@ForgotPassword</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ForgotPassword</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:16:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>Forgot Password functionality</a>
+<div class="">
+<span class="badge badge-default">Login.Forgot Password functionality</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Memberships</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Memberships</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:16:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='30' id='31'>Adding Membership Details in Education field in Qualifications</a>
+<div class="">
+<span class="badge badge-default">Adding Education Details in Admin Qualifications.Adding Membership Details in Education field in Qualifications</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@AddOptionalFields</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@AddOptionalFields</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:18:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='81' id='82'>Enable optional fields in PIM configuration</a>
+<div class="">
+<span class="badge badge-default">Validate OrangeHRM PIM Configuration Menu.Enable optional fields in PIM configuration</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Buzz_Post_Check</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Buzz_Post_Check</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:17:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='64' id='74'>Chech the Post is displayed in the Dashboard</a>
+<div class="">
+<span class="badge badge-default">Buzz.Chech the Post is displayed in the Dashboard</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@PerformanceTrackers</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@PerformanceTrackers</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:21:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='189' id='190'>Verifying the Job Title and Review Status in Manage Reviews</a>
+<div class="">
+<span class="badge badge-default">Accessing Manage Reviews,Trackers,Employee Trackers Fields.Verifying the Job Title and Review Status in Manage Reviews</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:21:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='189' id='198'>Verifying the Tracker name in My Trackers</a>
+<div class="">
+<span class="badge badge-default">Accessing Manage Reviews,Trackers,Employee Trackers Fields.Verifying the Tracker name in My Trackers</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:22:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='189' id='206'>Searching the Employee name in Employee Trackers</a>
+<div class="">
+<span class="badge badge-default">Accessing Manage Reviews,Trackers,Employee Trackers Fields.Searching the Employee name in Employee Trackers</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:22:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='189' id='216'>Searching the Employee name in Employee Trackers (Invalid)</a>
+<div class="">
+<span class="badge badge-default">Accessing Manage Reviews,Trackers,Employee Trackers Fields.Searching the Employee name in Employee Trackers (Invalid)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>6</span>
+</span>
+<p class="name">@QuickLaunch_Assert</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@QuickLaunch_Assert</h4>
+<span status="fail" class='badge log badge-danger'>6 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:23:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='226' id='236'>QuickLaunch Assert</a>
+<div class="">
+<span class="badge badge-default">Dashboard.QuickLaunch Assert</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:23:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='226' id='241'>QuickLaunch Assert</a>
+<div class="">
+<span class="badge badge-default">Dashboard.QuickLaunch Assert</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:23:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='226' id='246'>QuickLaunch Assert</a>
+<div class="">
+<span class="badge badge-default">Dashboard.QuickLaunch Assert</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:23:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='226' id='251'>QuickLaunch Assert</a>
+<div class="">
+<span class="badge badge-default">Dashboard.QuickLaunch Assert</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:23:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='226' id='256'>QuickLaunch Assert</a>
+<div class="">
+<span class="badge badge-default">Dashboard.QuickLaunch Assert</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:24:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='226' id='261'>QuickLaunch Assert</a>
+<div class="">
+<span class="badge badge-default">Dashboard.QuickLaunch Assert</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@DuplicateMemberships</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DuplicateMemberships</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:17:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='30' id='42'>Adding an already existing Memberships Detail should show an error</a>
+<div class="">
+<span class="badge badge-default">Adding Education Details in Admin Qualifications.Adding an already existing Memberships Detail should show an error</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@To_Punch_Out</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@To_Punch_Out</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:22:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='226' id='227'>Time at Work</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Time at Work</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Terminationreason</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Terminationreason</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:19:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='81' id='111'>Add Termination Reson in PIM configuration</a>
+<div class="">
+<span class="badge badge-default">Validate OrangeHRM PIM Configuration Menu.Add Termination Reson in PIM configuration</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+<span class='badge log badge-danger'>7</span>
+</span>
+<p class="name">@tag</p>
+<p class="duration text-sm">13 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tag</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:16:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Logging in with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login.Logging in with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:16:29 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>Logging in with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login.Logging in with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:16:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Logging in with empty credentials</a>
+<div class="">
+<span class="badge badge-default">Login.Logging in with empty credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:16:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>Forgot Password functionality</a>
+<div class="">
+<span class="badge badge-default">Login.Forgot Password functionality</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:17:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='64' id='66'>Access the Buzz and post it</a>
+<div class="">
+<span class="badge badge-default">Buzz.Access the Buzz and post it</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:17:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='64' id='74'>Chech the Post is displayed in the Dashboard</a>
+<div class="">
+<span class="badge badge-default">Buzz.Chech the Post is displayed in the Dashboard</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:22:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='226' id='227'>Time at Work</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Time at Work</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:23:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='226' id='236'>QuickLaunch Assert</a>
+<div class="">
+<span class="badge badge-default">Dashboard.QuickLaunch Assert</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:23:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='226' id='241'>QuickLaunch Assert</a>
+<div class="">
+<span class="badge badge-default">Dashboard.QuickLaunch Assert</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:23:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='226' id='246'>QuickLaunch Assert</a>
+<div class="">
+<span class="badge badge-default">Dashboard.QuickLaunch Assert</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:23:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='226' id='251'>QuickLaunch Assert</a>
+<div class="">
+<span class="badge badge-default">Dashboard.QuickLaunch Assert</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:23:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='226' id='256'>QuickLaunch Assert</a>
+<div class="">
+<span class="badge badge-default">Dashboard.QuickLaunch Assert</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:24:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='226' id='261'>QuickLaunch Assert</a>
+<div class="">
+<span class="badge badge-default">Dashboard.QuickLaunch Assert</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@AddCustomfields</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@AddCustomfields</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:18:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='81' id='91'>Add Custom fields in PIM configuration</a>
+<div class="">
+<span class="badge badge-default">Validate OrangeHRM PIM Configuration Menu.Add Custom fields in PIM configuration</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@AddEmployee</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@AddEmployee</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:19:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='121' id='122'>Add two new employees and assign a supervisor</a>
+<div class="">
+<span class="badge badge-default">Admin Functionalities.Add two new employees and assign a supervisor</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@EmployeeTrackers</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@EmployeeTrackers</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:22:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='189' id='206'>Searching the Employee name in Employee Trackers</a>
+<div class="">
+<span class="badge badge-default">Accessing Manage Reviews,Trackers,Employee Trackers Fields.Searching the Employee name in Employee Trackers</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:22:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='189' id='216'>Searching the Employee name in Employee Trackers (Invalid)</a>
+<div class="">
+<span class="badge badge-default">Accessing Manage Reviews,Trackers,Employee Trackers Fields.Searching the Employee name in Employee Trackers (Invalid)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@EmptyfieldMemberships</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@EmptyfieldMemberships</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:17:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='30' id='53'>Providing an empty value in Memberships field in Qualifications</a>
+<div class="">
+<span class="badge badge-default">Adding Education Details in Admin Qualifications.Providing an empty value in Memberships field in Qualifications</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@AddReportingmethods</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@AddReportingmethods</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:18:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='81' id='101'>Add Reporting methods in PIM configuration</a>
+<div class="">
+<span class="badge badge-default">Validate OrangeHRM PIM Configuration Menu.Add Reporting methods in PIM configuration</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@ValidCred</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ValidCred</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:16:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Logging in with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login.Logging in with valid credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@InvalidCred</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@InvalidCred</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:16:29 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>Logging in with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login.Logging in with invalid credentials</span>
 </div>
 </td>
 </tr>
@@ -496,25 +3040,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 14, 2025 07:19:57 pm</h3>
+<h3>Apr 14, 2025 10:16:17 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 14, 2025 07:20:50 pm</h3>
+<h3>Apr 14, 2025 10:24:26 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>7</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -530,12 +3074,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> features passed
+<div><small data-tooltip='87%'>
+<b>7</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='12%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -553,9 +3097,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>4</b> scenarios passed</small></div>
+<div><small data-tooltip='76%'><b>23</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='23%'><b>7</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -573,10 +3117,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>24</b> steps passed</small></div>
+<div><small data-tooltip='91%'><b>150</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='4%'><b>7</b> steps failed,
+<b>7</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -592,7 +3136,7 @@
 </div></div>
 <script>
 var timeline = {
-"Accessing Manage Reviews,Trackers,Employee Trackers Fields":52.643
+"Login":35.956,"Adding Education Details in Admin Qualifications":45.791,"Buzz":23.543,"Validate OrangeHRM PIM Configuration Menu":81.055,"Admin Functionalities":99.116,"Adding Tracker Details in Tracker field":36.916,"Accessing Manage Reviews,Trackers,Employee Trackers Fields":50.193,"Dashboard":116.038
 };
 </script>
 <div class="row">
@@ -602,8 +3146,168 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
+<td>@ManageReviews</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Performance</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Admin</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TrackersNegative</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@EmptyCred</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Buzz_Post</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@SearchEmployee</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Trackers</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@MyTrackers</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@ForgotPassword</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Memberships</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@AddOptionalFields</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Buzz_Post_Check</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
 <td>@PerformanceTrackers</td>
 <td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@QuickLaunch_Assert</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@DuplicateMemberships</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@To_Punch_Out</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Terminationreason</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@tag</td>
+<td>6</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>46.154%</td>
+</tr>
+<tr>
+<td>@AddCustomfields</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@AddEmployee</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -618,7 +3322,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@ManageReviews</td>
+<td>@EmptyfieldMemberships</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -626,7 +3330,23 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@MyTrackers</td>
+<td>@AddReportingmethods</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@ValidCred</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@InvalidCred</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -660,21 +3380,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
+passParent: 7,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 4,
-failChild: 0,
+passChild: 23,
+failChild: 7,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 24,
-failGrandChild: 0,
+passGrandChild: 150,
+failGrandChild: 7,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 7,
 infoGrandChild: 0,
 eventsCount: 5,
 };
