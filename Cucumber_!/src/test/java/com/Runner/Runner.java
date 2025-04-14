@@ -5,16 +5,22 @@ package com.Runner;
 	import io.cucumber.testng.CucumberOptions;
 
 	@CucumberOptions(
-//	    plugin = {
-//	        "pretty",
-//	        "json:target/cucumber-reports/Cucumber.json",
-//	        
-//	    },
+	    plugin = {
+	        "pretty",
+	        "json:target/cucumber-reports/Cucumber.json",
+			"html:target/cucumber-reports/Cucumber.html",
+			"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+	    }
+	    ,
 	    features = {
 	       //"src/test/resources/com/features/A_Login.feature",
 	       //"src/test/resources/com/features/PIM.feature",
-	       //"src/test/resources/com/features/TimePunchoutDashboard.feature",
-	       "src/test/resources/com/features/Configuration.feature",
+//	       "src/test/resources/com/features/TimePunchoutDashboard.feature",
+	       //"src/test/resources/com/features/Configuration.feature",
+	     //"src/test/resources/com/features/Performance.feature",
+	    "src/test/resources/com/features/Performance2.feature",
+	  //"src/test/resources/com/features//Buzz.feature",
+	    //"src/test/resources/com/features//Admin.feature"
 	    },
 	    glue = "com.Definations",
 	    monochrome = false,
